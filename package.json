@@ -1,0 +1,12 @@
+{
+    "name": "cloudjitsu-portfolio",
+    "version": "1.0.0",
+    "description": "Security Portfolio Website",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.19.2"
+    }
+  }
