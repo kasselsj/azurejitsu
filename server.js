@@ -4,18 +4,36 @@ const helmet = require("helmet");
 
 const app = express();
 
-// Security middleware
-app.use(helmet());
+/**
+ * Security headers.
+ * Note: Helmet's CSP can conflict with strict CSP you set at the platform.
+ * This default is fine for a simple static site.
+ */
+app.use(
+  helmet({
+    contentSecurityPolicy: false, // keep it simple; enforce CSP via Azure headers if desired
+  })
+);
 
-// Serve static files from public folder
-app.use(express.static(path.join(__dirname, "public")));
-app.use("/assets", express.static(path.join(__dirname, "assets")));
+/**
+ * Serve static files from /public
+ * Your site lives in /public (including /public/assets).
+ */
+const publicDir = path.join(__dirname, "public");
+app.use(express.static(publicDir));
 
-// Fallback route (optional if you add more pages)
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
+/**
+ * Optional health endpoint for Azure diagnostics / your own checks.
+ */
+app.get("/healthz", (req, res) => res.status(200).send("ok"));
+
+/**
+ * For multi-page static sites, DO NOT use a wildcard fallback to index.html.
+ * Let Express serve real files and return 404 otherwise.
+ */
+
+// Azure provides PORT; bind to 0.0.0.0 so the container can route traffic to it.
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Server listening on port ${PORT}`);
 });
-
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
-
