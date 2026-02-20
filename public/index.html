@@ -1,27 +1,101 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>CloudJitsu Security Portfolio</title>
-  <meta charset="UTF-8" />
+  <!-- Head / Meta -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Portfolio — resume, projects, and certifications." />
+  <meta name="color-scheme" content="dark" />
+  <title>Your Name — Portfolio</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 
 <body>
-  <h1>CloudJitsu Security Portfolio</h1>
+  <!-- Accessibility -->
+  <a class="skip-link" href="#content">Skip to content</a>
 
-  <p>Cloud Security | AppSec | Azure</p>
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container">
+      <div class="navbar">
+        <!-- Brand -->
+        <a class="brand" href="index.html" aria-label="Home">
+          <div class="brand-mark" aria-hidden="true"></div>
+          <div>
+            <strong>Your Name</strong>
+            <span>Cloud Security Engineer</span>
+          </div>
+        </a>
 
-  <nav>
-    <a href="/about.html">About</a> |
-    <a href="/resume.html">Resume</a> |
-    <a href="/project.html">Project</a>
-  </nav>
+        <!-- Nav -->
+        <nav aria-label="Primary">
+          <div class="nav-links" data-nav-menu>
+            <a href="about.html">About</a>
+            <a href="resume.html">Resume</a>
+            <a href="projects/">Projects</a>
+            <a href="projects/azure-secure-portfolio.html">Azure Project</a>
+          </div>
+        </nav>
 
-  <h2>Links</h2>
-  <ul>
-    <li><a href="#">GitHub</a></li>
-    <li><a href="#">LinkedIn</a></li>
-    <li><a href="#">Certifications</a></li>
-  </ul>
+        <!-- Actions -->
+        <div class="nav-actions">
+          <button class="btn mobile-toggle" type="button" data-nav-toggle aria-expanded="false">
+            Menu
+          </button>
+          <a class="btn primary" href="assets/docs/resume.pdf" download>Download PDF</a>
+        </div>
+      </div>
+    </div>
+  </header>
 
+  <!-- Main -->
+  <main id="content">
+    <div class="container">
+      <!-- Hero (minimal) -->
+      <div class="kicker">SECURITY • AZURE • PRACTICAL</div>
+      <h1>Your Name</h1>
+      <p class="lede">
+        I build secure, observable systems in Azure. This site is a lightweight portfolio designed to deploy cleanly into a secure hosting architecture.
+      </p>
+
+      <!-- Quick actions -->
+      <div class="section" style="margin-top:16px;">
+        <a class="btn primary" href="projects/azure-secure-portfolio.html">Featured case study</a>
+        <a class="btn" href="projects/" style="margin-left:8px;">All projects</a>
+      </div>
+
+      <hr class="hr" />
+
+      <!-- Minimal highlights -->
+      <section class="section">
+        <h2>Highlights</h2>
+        <div class="chips">
+          <span class="chip">Least privilege</span>
+          <span class="chip">Defense-in-depth</span>
+          <span class="chip">Logging & detection</span>
+          <span class="chip">Secure networking</span>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-row">
+        <div>© <span id="year"></span> Your Name</div>
+        <div>
+          <a class="link" href="about.html">Links</a>
+          <span aria-hidden="true"> · </span>
+          <a class="link" href="projects/">Projects</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>

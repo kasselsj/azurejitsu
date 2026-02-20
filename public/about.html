@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Head / Meta -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="About — background and links." />
+  <meta name="color-scheme" content="dark" />
+  <title>About — Your Name</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="navbar">
+        <a class="brand" href="index.html" aria-label="Home">
+          <div class="brand-mark" aria-hidden="true"></div>
+          <div>
+            <strong>Your Name</strong>
+            <span>Cloud Security Engineer</span>
+          </div>
+        </a>
+
+        <nav aria-label="Primary">
+          <div class="nav-links" data-nav-menu>
+            <a href="about.html">About</a>
+            <a href="resume.html">Resume</a>
+            <a href="projects/">Projects</a>
+            <a href="projects/azure-secure-portfolio.html">Azure Project</a>
+          </div>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="btn mobile-toggle" type="button" data-nav-toggle aria-expanded="false">Menu</button>
+          <a class="btn primary" href="assets/docs/resume.pdf" download>Download PDF</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main id="content">
+    <div class="container">
+      <h1>About</h1>
+      <p class="lede">
+        Replace this paragraph with a short, confident bio: your focus areas, what you’re great at, and what you’re looking for.
+      </p>
+
+      <div class="two-col section">
+        <!-- Headshot -->
+        <div class="avatar">
+          <img src="assets/img/headshot-placeholder.svg" alt="Placeholder headshot" />
+        </div>
+
+        <!-- Links + creds -->
+        <div>
+          <h2>Links</h2>
+          <p style="margin-top:0;">
+            <a class="link" href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noreferrer">LinkedIn</a>
+            <span aria-hidden="true"> · </span>
+            <a class="link" href="https://github.com/YOUR_GITHUB" target="_blank" rel="noreferrer">GitHub</a>
+            <span aria-hidden="true"> · </span>
+            <a class="link" href="https://www.credly.com/users/YOUR_CREDLY" target="_blank" rel="noreferrer">Verifiable credentials</a>
+          </p>
+
+          <h2 style="margin-top:22px;">Certifications</h2>
+          <div class="chips">
+            <span class="chip">AZ-500</span>
+            <span class="chip">AZ-900</span>
+            <span class="chip">AI-900</span>
+            <span class="chip">ISC2 CC</span>
+            <span class="chip">ISC2 CCSP</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-row">
+        <div>© <span id="year"></span> Your Name</div>
+        <div><a class="link" href="projects/">Projects</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

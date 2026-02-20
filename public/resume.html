@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Resume — Your Name" />
+  <meta name="color-scheme" content="dark" />
+  <title>Resume — Your Name</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="navbar">
+        <a class="brand" href="index.html" aria-label="Home">
+          <div class="brand-mark" aria-hidden="true"></div>
+          <div>
+            <strong>Your Name</strong>
+            <span>Cloud Security Engineer</span>
+          </div>
+        </a>
+
+        <nav aria-label="Primary">
+          <div class="nav-links" data-nav-menu>
+            <a href="about.html">About</a>
+            <a href="resume.html">Resume</a>
+            <a href="projects/">Projects</a>
+            <a href="projects/azure-secure-portfolio.html">Azure Project</a>
+          </div>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="btn mobile-toggle" type="button" data-nav-toggle aria-expanded="false">Menu</button>
+          <a class="btn primary" href="assets/docs/resume.pdf" download>Download PDF</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main id="content">
+    <div class="container">
+      <h1>Resume</h1>
+      <p class="lede">
+        Web version below. Keep a PDF at <span style="font-family:var(--mono);">assets/docs/resume.pdf</span>.
+      </p>
+
+      <hr class="hr" />
+
+      <!-- Contact -->
+      <section class="section">
+        <h2>Contact</h2>
+        <p style="margin-top:0;color:var(--muted);">
+          City, State · <a class="link" href="mailto:you@email.com">you@email.com</a> ·
+          <a class="link" href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noreferrer">LinkedIn</a> ·
+          <a class="link" href="https://github.com/YOUR_GITHUB" target="_blank" rel="noreferrer">GitHub</a>
+        </p>
+      </section>
+
+      <!-- Summary -->
+      <section class="section">
+        <h2>Summary</h2>
+        <p style="margin-top:0;">
+          Replace with a 2–3 sentence summary focused on impact and strengths.
+        </p>
+      </section>
+
+      <!-- Skills -->
+      <section class="section">
+        <h2>Skills</h2>
+        <div class="chips">
+          <span class="chip">Entra / IAM</span>
+          <span class="chip">RBAC / PIM</span>
+          <span class="chip">Network security</span>
+          <span class="chip">Logging / SIEM</span>
+          <span class="chip">App hardening</span>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="section">
+        <h2>Experience</h2>
+
+        <div class="resume-block">
+          <div class="role-row">
+            <strong>Cloud Security Engineer — Company</strong>
+            <span>2023 – Present</span>
+          </div>
+          <ul>
+            <li>Bullet with measurable impact (replace).</li>
+            <li>Bullet showing scope and ownership (replace).</li>
+            <li>Bullet showing collaboration/leadership (replace).</li>
+          </ul>
+        </div>
+
+        <div class="resume-block">
+          <div class="role-row">
+            <strong>Security / IT Role — Company</strong>
+            <span>2020 – 2023</span>
+          </div>
+          <ul>
+            <li>Replace with achievement-focused bullets.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section class="section">
+        <h2>Certifications</h2>
+        <div class="chips">
+          <span class="chip">AZ-500</span>
+          <span class="chip">AZ-900</span>
+          <span class="chip">AI-900</span>
+          <span class="chip">ISC2 CC</span>
+          <span class="chip">ISC2 CCSP</span>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-row">
+        <div>© <span id="year"></span> Your Name</div>
+        <div><a class="link" href="projects/">Projects</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
