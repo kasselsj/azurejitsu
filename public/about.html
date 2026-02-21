@@ -27,10 +27,25 @@
 
         <nav aria-label="Primary">
           <div class="nav-links" data-nav-menu>
-            <a href="about.html">About</a>
-            <a href="resume.html">Resume</a>
-            <a href="projects/">Projects</a>
-            <a href="projects/azure-secure-portfolio.html">About this Portfolio</a>
+            <a href="/about.html" aria-current="page">About</a>
+            <a href="/resume.html">Resume</a>
+        
+            <div class="dropdown">
+              <a href="/projects/" class="dropdown-link">Projects</a>
+        
+              <button
+                type="button"
+                class="dropdown-toggle"
+                aria-expanded="false"
+                aria-label="Open Projects menu">
+                ▾
+              </button>
+        
+              <div class="dropdown-menu">
+                <a href="/projects/">All Projects</a>
+                <a href="/projects/azure-secure-portfolio.html">Azure Secure Portfolio</a>
+              </div>
+            </div>
           </div>
         </nav>
 
@@ -46,9 +61,9 @@
     <div class="container">
       <h1>About</h1>
       <p class="lede">
-        I’m a cloud security engineer specializing in enterprise Azure environments, with 8 years in the medical device manufacturing space.
-        <br> 
+        I’m a cloud security engineer specializing in enterprise Azure environments, with 8 years in the medical device manufacturing space. 
         I focus on building systems that are secure by design and resilient in real-world conditions.
+        <br>
         <br>
         Outside of work, I train jiu-jitsu, which reinforces the same principles I apply professionally: strong fundamentals, thoughtful control, and the ability to adapt under pressure.
       </p>
@@ -96,13 +111,6 @@
                rel="noopener noreferrer"
                class="cert-item">
               <span class="cert-label">ISC2 CC · Certified in Cybersecurity</span>
-            </a>
-          
-            <a href="https://www.credly.com/badges/<YOUR-CCSP-BADGE-ID>"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="cert-item">
-              <span class="cert-label">ISC2 CCSP · Cloud Security Professional</span>
             </a>
           </div>
         </div>
