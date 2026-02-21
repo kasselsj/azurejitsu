@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="Portfolio — resume, projects, and certifications." />
   <meta name="color-scheme" content="dark" />
-  <title>Your Name — Portfolio</title>
+  <title>Jarrod Kassels — Portfolio</title>
 
   <!-- Styles -->
   <link rel="stylesheet" href="assets/css/styles.css" />
@@ -24,7 +24,7 @@
         <a class="brand" href="index.html" aria-label="Home">
           <div class="brand-mark" aria-hidden="true"></div>
           <div>
-            <strong>Your Name</strong>
+            <strong>Jarrod Kassels</strong>
             <span>Cloud Security Engineer</span>
           </div>
         </a>
@@ -34,17 +34,33 @@
           <div class="nav-links" data-nav-menu>
             <a href="about.html">About</a>
             <a href="resume.html">Resume</a>
-            <a href="projects/">Projects</a>
-            <a href="projects/azure-secure-portfolio.html">Azure Project</a>
+        
+            <div class="dropdown">
+              <!-- Clickable parent -->
+              <a href="projects/index.html" class="dropdown-link">
+                Projects
+              </a>
+        
+              <!-- Dropdown toggle -->
+              <button type="button" class="dropdown-toggle" aria-expanded="false" aria-label="Open Projects menu">
+                ▾
+              </button>
+        
+              <!-- Dropdown menu -->
+              <div class="dropdown-menu">
+                <a href="/projects/">All Projects</a>
+                <a href="projects/azure-secure-portfolio.html">
+                  Azure Secure Portfolio
+                </a>
+              </div>
+            </div>
+        
           </div>
         </nav>
 
         <!-- Actions -->
         <div class="nav-actions">
-          <button class="btn mobile-toggle" type="button" data-nav-toggle aria-expanded="false">
-            Menu
-          </button>
-          <a class="btn primary" href="assets/docs/resume.pdf" download>Download PDF</a>
+          <a class="btn primary" href="assets/docs/resume.pdf" download>Download Resume (PDF)</a>
         </div>
       </div>
     </div>
@@ -54,16 +70,16 @@
   <main id="content">
     <div class="container">
       <!-- Hero (minimal) -->
-      <div class="kicker">SECURITY • AZURE • PRACTICAL</div>
-      <h1>Your Name</h1>
+      <div class="kicker">CLOUD SECURITY • AZURE • APPLIED AI</div>
+      <h1>Jarrod Kassels</h1>
       <p class="lede">
-        I build secure, observable systems in Azure. This site is a lightweight portfolio designed to deploy cleanly into a secure hosting architecture.
+        I design and secure Azure cloud platforms using a practitioner’s mindset, building defense-in-depth that holds up under pressure. Like jiu-jitsu, my approach emphasizes strong fundamentals, disciplined control, and effectiveness in adversarial environments.
       </p>
 
       <!-- Quick actions -->
       <div class="section" style="margin-top:16px;">
-        <a class="btn primary" href="projects/azure-secure-portfolio.html">Featured case study</a>
-        <a class="btn" href="projects/" style="margin-left:8px;">All projects</a>
+        <a class="btn primary" href="projects/azure-secure-portfolio.html">This portfolio is hosted on Azure!</a>
+        <a class="btn" href="projects/" style="margin-left:8px;">All Projects</a>
       </div>
 
       <hr class="hr" />
@@ -72,10 +88,12 @@
       <section class="section">
         <h2>Highlights</h2>
         <div class="chips">
-          <span class="chip">Least privilege</span>
-          <span class="chip">Defense-in-depth</span>
-          <span class="chip">Logging & detection</span>
-          <span class="chip">Secure networking</span>
+          <span class="chip">Zero Trust</span>
+          <span class="chip">Defense-In-Depth</span>
+          <span class="chip">Identity & Access</span>
+          <span class="chip">Logging & Detection</span>
+          <span class="chip">Secure Networking</span>
+          <span class="chip">Applied AI</span>
         </div>
       </section>
     </div>
@@ -85,7 +103,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-row">
-        <div>© <span id="year"></span> Your Name</div>
+        <div>© <span id="year"></span> Jarrod Kassels</div>
         <div>
           <a class="link" href="about.html">Links</a>
           <span aria-hidden="true"> · </span>
